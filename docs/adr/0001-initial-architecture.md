@@ -23,12 +23,17 @@ namespaces forward would be dead weight for a static marketing page.
 - **Content is code**: the three product cards live inline in
   `app/page.tsx` as a typed array. No CMS for three items.
 - **Account/domain**: deploys to the Yaoxin Cloudflare account (same account
-  as `crawl.l92-labs.com` / `drop.l92-labs.com`), targeting the apex
-  `l92-labs.com`. The custom-hostname step needs zone-write credentials on
-  that account beyond the read-only OAuth session available at scaffold
-  time — dev (`*.workers.dev`) ships first; the apex is wired once
-  zone-write access is available, per the two-phase domain rule (Worker
-  must exist before `workers-domain`).
+  as `crawl.l92-labs.com` / `drop.l92-labs.com`), on the apex `l92-labs.com`.
+  Wired via `wrangler`'s `routes: [{ pattern: "l92-labs.com", custom_domain:
+  true }]` (Workers Custom Domains — Cloudflare manages the DNS record and
+  cert for you), not a Terraform `workers-domain` module, per the "no infra"
+  decision above. Two-phase order still applies: the Worker was deployed to
+  `*.workers.dev` first, then the custom domain was attached once a scoped
+  Cloudflare API token existed. `cf-bootstrap creds mint` refused (it expects
+  a project-owned R2 state bucket that this repo intentionally never
+  created), so the token was cut directly against the Cloudflare API using
+  the `yaoxin` master token registered via `cf-bootstrap accounts add`
+  (Workers Scripts Write + Workers Routes Write + Account Settings Read).
 
 ## Consequences
 - Cloudflare-only, same as every L92 Labs repo: no AWS/GCP/Azure services.

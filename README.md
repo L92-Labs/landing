@@ -5,8 +5,8 @@ per product, each linking to its live app and repo.
 
 | | URL |
 |--|-----|
-| **Prod (target)** | https://l92-labs.com |
-| **Dev** | see latest `wrangler deploy` output (`*.workers.dev`) |
+| **Prod** | https://l92-labs.com |
+| **Dev** | https://landing-web.yaoxin-yu-intelligent-technology.workers.dev |
 
 ## Layout
 
@@ -41,8 +41,9 @@ pnpm deploy   # wrangler deploy via vinext-cloudflare, targets the account
 ```
 
 No `.env.infra`, no Terraform apply — there's nothing to provision. The
-custom hostname (`l92-labs.com`) is wired once with `wrangler` after the
-Worker exists, per the sibling repos' two-phase domain rule.
+custom hostname (`l92-labs.com`) is a Workers Custom Domain, declared in
+`apps/web/wrangler.jsonc` (`routes: [{ pattern: "l92-labs.com", custom_domain:
+true }]`) — Cloudflare manages the DNS record and certificate.
 
 ## License
 
