@@ -1,0 +1,4 @@
+[tools]
+node = "22"
+pnpm = "11.16.0"
+# Wrangler is pinned in apps/web/package.json and invoked through pnpm.

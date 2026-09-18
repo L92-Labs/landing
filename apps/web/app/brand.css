@@ -1,0 +1,46 @@
+/* L92 Labs — brand tokens. The only place raw colors/fonts are defined.
+   Components consume the role vars below, never these directly. */
+:root {
+  /* Palette (from the org mark: blue → purple gradient on near-black) */
+  --l92-ink: #05070f;
+  --l92-panel: #0d1220;
+  --l92-panel-2: #131a30;
+  --l92-blue: #4f7dff;
+  --l92-cyan: #38d4ff;
+  --l92-purple: #9b6bff;
+  --l92-white: #eef1fa;
+  --l92-muted: #97a0bd;
+
+  /* Roles */
+  --bg: var(--l92-ink);
+  --surface: var(--l92-panel);
+  --surface-2: var(--l92-panel-2);
+  --text: var(--l92-white);
+  --text-muted: var(--l92-muted);
+  --border: rgba(255, 255, 255, 0.08);
+  --primary: var(--l92-blue);
+  --primary-2: var(--l92-purple);
+  --primary-fg: #ffffff;
+
+  /* Type scale */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  --fs-display: clamp(2.25rem, 4vw + 1rem, 3.75rem);
+  --fs-h2: clamp(1.5rem, 1.5vw + 1rem, 2rem);
+  --fs-body: 1rem;
+  --fs-sm: 0.875rem;
+
+  /* Spacing (4px base) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  --container: 72rem;
+  --gutter: 1rem;
+  --radius: 16px;
+}
