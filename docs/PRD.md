@@ -33,7 +33,7 @@ via vinext. See [ADR-0001](adr/0001-initial-architecture.md).
 - None open for v1.
 
 ## Milestones
-- [ ] MVP on `*.workers.dev` (dev)
+- [x] MVP on `*.workers.dev` (dev) — https://landing-web.yaoxin-yu-intelligent-technology.workers.dev
 - [ ] Custom domain wired: apex `l92-labs.com` (needs zone-write credentials
       on the Yaoxin Cloudflare account — see ADR-0001)
 - [ ] Add a 4th card when the next product ships
