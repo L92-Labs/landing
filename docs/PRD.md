@@ -33,7 +33,8 @@ via vinext. See [ADR-0001](adr/0001-initial-architecture.md).
 - None open for v1.
 
 ## Milestones
-- [x] MVP on `*.workers.dev` (dev) — https://landing-web.yaoxin-yu-intelligent-technology.workers.dev
+- [x] MVP deployed (Worker `landing-page-l92-labs`)
 - [x] Custom domain wired: apex **https://l92-labs.com** (Workers Custom
-      Domain, auto-managed DNS + cert)
+      Domain, auto-managed DNS + cert; `workers.dev` preview disabled once
+      the custom domain route was added — the apex is the only URL)
 - [ ] Add a 4th card when the next product ships

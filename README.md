@@ -6,7 +6,7 @@ per product, each linking to its live app and repo.
 | | URL |
 |--|-----|
 | **Prod** | https://l92-labs.com |
-| **Dev** | https://landing-web.yaoxin-yu-intelligent-technology.workers.dev |
+| **Worker** | `landing-page-l92-labs` (named to avoid clashing with the unrelated `yaoxinyu-landing-page` Worker already on this account) |
 
 ## Layout
 

@@ -34,6 +34,13 @@ namespaces forward would be dead weight for a static marketing page.
   created), so the token was cut directly against the Cloudflare API using
   the `yaoxin` master token registered via `cf-bootstrap accounts add`
   (Workers Scripts Write + Workers Routes Write + Account Settings Read).
+- **Worker name**: `landing-page-l92-labs`, not the shorter `landing-web` it
+  was first deployed as — the Yaoxin account already runs an unrelated
+  `yaoxinyu-landing-page` Worker for a different domain
+  (`yaoxinyu.tw`/`yaoxinyu.com.tw`), and a plain `landing-*` name is too easy
+  to confuse with it in `wrangler deployments` / the dashboard. Once renamed,
+  `workers.dev` preview stayed disabled (Wrangler turns it off by default
+  once a `custom_domain` route is set) — `l92-labs.com` is the only URL.
 
 ## Consequences
 - Cloudflare-only, same as every L92 Labs repo: no AWS/GCP/Azure services.

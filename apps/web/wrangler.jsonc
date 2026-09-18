@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "landing-web",
+  "name": "landing-page-l92-labs",
   "compatibility_date": "2025-12-01",
   "compatibility_flags": [
     "nodejs_compat"
