@@ -20,7 +20,7 @@ namespaces forward would be dead weight for a static marketing page.
 - **No Terraform**: with zero Cloudflare resources to provision, the
   `infra/` Terragrunt scaffold cf-bootstrap normally generates was dropped.
   Deploy is `wrangler deploy` directly against the target account.
-- **Content is code**: the three product cards live inline in
+- **Content is code**: the product cards live inline in
   `app/page.tsx` as a typed array. No CMS for three items.
 - **Account/domain**: deploys to the Yaoxin Cloudflare account (same account
   as `crawl.l92-labs.com` / `drop.l92-labs.com`), on the apex `l92-labs.com`.

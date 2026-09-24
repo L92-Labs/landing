@@ -31,6 +31,14 @@ const projects: Project[] = [
     repo: "https://github.com/L92-Labs/domain-idea-agent",
     screenshot: "/screenshots/domain-idea-agent-home.png",
   },
+  {
+    name: "AI Smart Router",
+    tagline:
+      "OpenAI-compatible routing that picks the cheapest eligible model per request — policy, experiments, and adaptive control on Cloudflare.",
+    href: "https://dev-ai-smart-router-web.yaoxin-yu-intelligent-technology.workers.dev",
+    repo: "https://github.com/L92-Labs/ai-smart-router",
+    screenshot: "/screenshots/ai-smart-router-home.webp",
+  },
 ];
 
 export default function Page() {
@@ -52,8 +60,8 @@ export default function Page() {
           <h1>Cloudflare-native tools for AI agents</h1>
           <p>
             Small, sharp products that agents and the people who run them can
-            reach for directly — artifact hosting, web crawling, and domain
-            naming, all built on Cloudflare Workers.
+            reach for directly — artifact hosting, web crawling, domain naming,
+            and model routing, all built on Cloudflare Workers.
           </p>
         </section>
 
