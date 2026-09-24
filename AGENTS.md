@@ -11,9 +11,9 @@ backend, no auth, no storage — see
 `apps/api` and no Terraform, unlike its sibling repos.
 
 ## Principles (non-negotiable)
-- **DRY / SOLID / KISS.** No clever abstractions ahead of need. This is three
-  product cards in an array — keep it that simple until there's a real reason
-  not to.
+- **DRY / SOLID / KISS.** No clever abstractions ahead of need. This is a
+  handful of product cards in an array — keep it that simple until there's a
+  real reason not to.
 - **Cloudflare-only.** No AWS / GCP / Azure SDKs or services. CI rejects
   off-platform deps (see `.github/workflows/check.yml`).
 - **Every change is a PR.** Small, reviewable, green CI. No direct pushes to main.

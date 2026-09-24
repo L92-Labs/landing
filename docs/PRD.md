@@ -5,9 +5,9 @@ The public homepage for L92 Labs: one page that shows what the org has shipped
 and links out to each product.
 
 ## Problem
-L92 Labs has three live products (Agentdrop, Flarecrawl, Domain Idea Agent)
-and no single place that says so. `l92-labs.com` should answer "what is this
-org" in one screenshot.
+L92 Labs has four live products (Agentdrop, Flarecrawl, Domain Idea Agent,
+AI Smart Router) and `l92-labs.com` should answer "what is this org" in one
+screenshot.
 
 ## Personas
 1. A visitor who followed a link to one of the products and wants to see
@@ -37,4 +37,4 @@ via vinext. See [ADR-0001](adr/0001-initial-architecture.md).
 - [x] Custom domain wired: apex **https://l92-labs.com** (Workers Custom
       Domain, auto-managed DNS + cert; `workers.dev` preview disabled once
       the custom domain route was added — the apex is the only URL)
-- [ ] Add a 4th card when the next product ships
+- [x] Add a 4th card when the next product ships (AI Smart Router)
