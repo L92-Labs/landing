@@ -5,8 +5,8 @@ The public homepage for L92 Labs: one page that shows what the org has shipped
 and links out to each product.
 
 ## Problem
-L92 Labs has four live products (Agentdrop, Flarecrawl, Domain Idea Agent,
-AI Smart Router) and `l92-labs.com` should answer "what is this org" in one
+L92 Labs has five live products (Agentdrop, Flarecrawl, Domain Idea Agent,
+AI Smart Router, Payetonhook) and `l92-labs.com` should answer "what is this org" in one
 screenshot.
 
 ## Personas
@@ -38,3 +38,4 @@ via vinext. See [ADR-0001](adr/0001-initial-architecture.md).
       Domain, auto-managed DNS + cert; `workers.dev` preview disabled once
       the custom domain route was added — the apex is the only URL)
 - [x] Add a 4th card when the next product ships (AI Smart Router)
+- [x] Add a 5th card (Payetonhook) — custom domain `payetonhook.l92-labs.com`
