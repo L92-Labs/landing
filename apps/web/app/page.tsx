@@ -39,6 +39,14 @@ const projects: Project[] = [
     repo: "https://github.com/L92-Labs/ai-smart-router",
     screenshot: "/screenshots/ai-smart-router-home.webp",
   },
+  {
+    name: "Payetonhook",
+    tagline:
+      "Webhook relay and testing platform — durable ingestion, fan-out delivery, retries, replay, and a local dev tunnel.",
+    href: "https://payetonhook.l92-labs.com",
+    repo: "https://github.com/L92-Labs/payetonhook",
+    screenshot: "/screenshots/payetonhook-home.png",
+  },
 ];
 
 export default function Page() {
@@ -61,7 +69,7 @@ export default function Page() {
           <p>
             Small, sharp products that agents and the people who run them can
             reach for directly — artifact hosting, web crawling, domain naming,
-            and model routing, all built on Cloudflare Workers.
+            model routing, and webhook relay, all built on Cloudflare Workers.
           </p>
         </section>
 
