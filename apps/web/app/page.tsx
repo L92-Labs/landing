@@ -10,7 +10,7 @@ const projects: Project[] = [
   {
     name: "Agentdrop",
     tagline:
-      "Artifact hosting for AI agents — images, video, HTML, PDF, and Markdown with shareable links.",
+      "Open-source artifact hosting for AI agents — images, video, HTML, PDF, and Markdown with shareable links. Self-host it on Cloudflare in one click.",
     href: "https://drop.l92-labs.com",
     repo: "https://github.com/L92-Labs/agentdrop",
     screenshot: "/screenshots/agentdrop-home.webp",
